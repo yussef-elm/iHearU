@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_theme_entries">
+        <item>@string/pref_theme_light</item>
+        <item>@string/pref_theme_dark</item>
+    </string-array>
+    <string-array name="pref_theme_entry_values">
+        <item>@string/pref_val_theme_light</item>
+        <item>@string/pref_val_theme_dark</item>
+    </string-array>
+
+    <!-- Add language names below here (make sure they are ordered alphabetically!) -->
+    <string-array name="pref_language_entries">
+        <item>@string/pref_language_system</item>
+        <item>English</item>
+        <item>Français</item>
+
+    </string-array>
+
+    <!-- Add language codes below here
+    (make sure they are in the same order as the language names array!) -->
+    <string-array name="pref_language_entry_values">
+        <item />
+        <item>de</item>
+        <item>en</item>
+        <item>fr</item>
+
+    </string-array>
+
+    <string-array name="pref_input_method_entries">
+        <item>@string/pref_input_method_vosk</item>
+        <item>@string/pref_input_method_text</item>
+    </string-array>
+    <string-array name="pref_input_method_entry_values">
+        <item>@string/pref_val_input_method_vosk</item>
+        <item>@string/pref_val_input_method_text</item>
+    </string-array>
+
+    <string-array name="pref_speech_output_method_entries">
+        <item>@string/pref_speech_output_method_android</item>
+        <item>@string/pref_speech_output_method_toast</item>
+        <item>@string/pref_speech_output_method_snackbar</item>
+        <item>@string/pref_speech_output_method_nothing</item>
+    </string-array>
+
+    <string-array name="pref_speech_output_method_entry_values">
+        <item>@string/pref_val_speech_output_method_android</item>
+        <item>@string/pref_val_speech_output_method_toast</item>
+        <item>@string/pref_val_speech_output_method_snackbar</item>
+        <item>@string/pref_val_speech_output_method_nothing</item>
+    </string-array>
+
+    <string-array name="pref_search_engine_entries">
+        <item>@string/pref_search_engine_duckduckgo</item>
+    </string-array>
+    <string-array name="pref_search_engine_entry_values">
+        <item>@string/pref_val_search_engine_duckduckgo</item>
+    </string-array>
+</resources>

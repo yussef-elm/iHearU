@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.1.3" type="baseline" client="gradle" dependencies="false" name="AGP (7.1.3)" variant="fatal" version="7.1.3">
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;skill_sentence_example_calculator&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;skill_sentence_example_calculator&quot;>Combien font cinq fois quatre moins un million \?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;skill_name_calculator&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;skill_name_calculator&quot;>Calculatrice&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;skill_name_lyrics&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;skill_name_lyrics&quot;>Paroles de chansons&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;skill_sentence_example_weather&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;skill_sentence_example_weather&quot;>Quel temps fait-il à Rome \?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ExtraTranslation"
+        message="&quot;skill_name_weather&quot; is translated here but not found in default locale"
+        errorLine1="    &lt;string name=&quot;skill_name_weather&quot;>Météo&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+</issues>
