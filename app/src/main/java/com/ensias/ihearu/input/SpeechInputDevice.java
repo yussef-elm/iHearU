@@ -99,5 +99,34 @@ public abstract class SpeechInputDevice extends InputDevice {
     }
 
 
-
+    private void showState(final ShownState state) {
+        currentShownState = state;
+        if (voiceFab != null && voiceLoading != null) {
+            switch (state) {
+                case REQUIRES_DOWNLOAD:
+                    voiceFab.setIcon(AppCompatResources.getDrawable(voiceFab.getContext(),
+                            R.drawable.ic_download_white));
+                    voiceFab.shrink();
+                    voiceLoading.setVisibility(View.GONE);
+                    break;
+                case LOADING:
+                    voiceFab.setIcon(new ColorDrawable(Color.TRANSPARENT));
+                    voiceFab.shrink();
+                    voiceLoading.setVisibility(View.VISIBLE);
+                    break;
+                case INACTIVE: default:
+                    voiceFab.setIcon(AppCompatResources.getDrawable(voiceFab.getContext(),
+                            R.drawable.ic_mic_none_white));
+                    voiceFab.shrink();
+                    voiceLoading.setVisibility(View.GONE);
+                    break;
+                case LISTENING:
+                    voiceFab.setIcon(AppCompatResources.getDrawable(voiceFab.getContext(),
+                            R.drawable.ic_mic_white));
+                    voiceFab.extend();
+                    voiceLoading.setVisibility(View.GONE);
+                    break;
+            }
+        }
+    }
 }
