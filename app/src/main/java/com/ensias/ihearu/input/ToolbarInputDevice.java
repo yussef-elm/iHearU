@@ -57,6 +57,29 @@ public class ToolbarInputDevice extends InputDevice {
         }
     }
 
-   
-   
+    @Override
+    public void cleanup() {
+        super.cleanup();
+        setTextInputItem(null);
+    }
+
+    @Override
+    public void load() {
+    }
+
+    @Override
+    public void tryToGetInput(final boolean manual) {
+        if (textInputItem != null) {
+            super.tryToGetInput(manual);
+            textInputItem.expandActionView();
+        }
+    }
+
+    @Override
+    public void cancelGettingInput() {
+        if (textInputItem != null && textInputItem.isActionViewExpanded()) {
+            textInputItem.collapseActionView();
+            notifyNoInputReceived();
+        }
+    }
 }
